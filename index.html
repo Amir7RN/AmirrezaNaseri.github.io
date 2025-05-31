@@ -140,7 +140,36 @@
     <li><a href="https://www.researchgate.net/publication/375782939_Neural_Control_of_Prosthetic_Ankle_Foot_with_Human-Force_Feedback" target="_blank">Powered Prosthesis (Chapter 7)</a></li>
   </ul>
 </li>
-      
+
+      <li>
+  <strong>Robotic Ankle Prosthesis with Shared Autonomy</strong> — Developed a control framework for a powered ankle prosthesis using real-time motor control and sensor fusion to enable adaptive assistance during obstacle avoidance.
+
+  <ul style="margin-top: 5px;">
+    <li>Programmed and tuned ELMO Gold Solo Twitter servo drives for BLDC motors in position and torque control modes.</li>
+    <li>Designed a real-time trajectory tracking controller based on normative gait data, implemented in TwinCAT3–Simulink RT environment.</li>
+    <li>Integrated EMG and IMU sensors with fast filtering and threshold logic to detect user intent deviations from normal walking.</li>
+    <li>Implemented control switching logic: transitions from position control to torque augmentation when obstacle engagement is detected.</li>
+    <li>Configured sensor calibration pipelines for load cells, potentiometers, and multi-turn encoders on a bypass-enabled prosthetic system for AB subject testing.</li>
+  </ul>
+
+  <p style="margin-top: 10px;"><strong>Workflow Summary:</strong></p>
+  <ol>
+    <li>Tune motor using ELMO studio for accurate position tracking of normative ankle angles.</li>
+    <li>Detect user intent via EMG signal thresholding; determine phase and disturbance onset.</li>
+    <li>Trigger torque boost to help navigate obstacles when abnormal muscle contraction is sensed.</li>
+    <li>Verify closed-loop control in experimental setup using physical obstacle interaction and bypass prosthetic fixture.</li>
+  </ol>
+
+  <div style="margin-top: 15px; text-align: center;">
+    <img src="images/Ankle.png" alt="EMG Prosthesis Setup" style="max-width: 80%; height: auto; border: 1px solid #ccc; padding: 5px;">
+    <p style="font-size: 14px;">Subplots show simulated EMG environment, real-time controller, and prosthetic hardware used for AB testing</p>
+  </div>
+
+  <div style="display: flex; justify-content: center; margin-top: 20px;">
+    <video src="videos/Experiment.mp4" controls style="width: 60%;"></video>
+  </div>
+</li>
+
       
 </li>      
       <li><strong>Robotic Knee Prosthesis with Fault-Tolerant Control</strong> — Developed a real-time controller to detect and mitigate internal errors during gait. <a href="#">[Video]</a><br>
