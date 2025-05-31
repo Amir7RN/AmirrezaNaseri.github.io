@@ -97,7 +97,7 @@
   <img src="images/ERHP3.png" style="max-height: 180px; width: auto;">
   <img src="images/ERHP4.jpg" style="max-height: 180px; width: auto;">
   <img src="images/ERHP5.png" style="max-height: 200px; width: auto;">
-
+</div>
   <div style="display: flex; flex-wrap: nowrap; gap: 10px; justify-content: center; margin-top: 10px;">
   <img src="images/ERHP6.jpg" style="max-height: 160px; width: auto;">
   <img src="images/ERHP8.jpg" style="max-height: 160px; width: auto;">
@@ -117,7 +117,8 @@
 </li>
 
       <li>
-  <strong>Real-Time Adaptive Control of Actuated Robotic Systems Using Force Feedback</strong> — Designed and validated a bioinspired controller that uses vertical ground reaction force (GRF) feedback to modulate ankle impedance, enabling stable and human-like locomotion in simulation and prosthetic experiments.
+  <strong>Real-Time Adaptive Control of Actuated Robotic Systems Using Force Feedback</strong><br>
+  Designed and validated a bioinspired controller that uses vertical ground reaction force (GRF) feedback to modulate ankle impedance, enabling stable and human-like locomotion in simulation and prosthetic experiments.
   <p style="margin-top: 10px;"><strong>Workflow Summary:</strong></p>
   <ol>
     <li>Analyzed human-like ankle torque generation using GRF-modulated impedance functions.</li>
@@ -144,22 +145,14 @@
 </li>
 
       <li>
-  <strong>Robotic Ankle Prosthesis with Shared Autonomy</strong> — Developed a control framework for a powered ankle prosthesis using real-time motor control and sensor fusion to enable adaptive assistance during obstacle avoidance.
-
-  <ul style="margin-top: 5px;">
+  <strong>Robotic Ankle Prosthesis with Shared Autonomy</strong><br>
+  Developed a control framework for a powered ankle prosthesis using real-time motor control and sensor fusion to enable adaptive assistance during obstacle avoidance.
+  <p style="margin-top: 10px;"><strong>Workflow Summary:</strong></p>
+  <ol>
     <li>Programmed and tuned ELMO Gold Solo Twitter servo drives for BLDC motors in position and torque control modes.</li>
-    <li>Designed a real-time trajectory tracking controller based on normative gait data, implemented in TwinCAT3–Simulink RT environment.</li>
     <li>Integrated EMG and IMU sensors with fast filtering and threshold logic to detect user intent deviations from normal walking.</li>
     <li>Implemented control switching logic: transitions from position control to torque augmentation when obstacle engagement is detected.</li>
     <li>Configured sensor calibration pipelines for load cells, potentiometers, and multi-turn encoders on a bypass-enabled prosthetic system for AB subject testing.</li>
-  </ul>
-
-  <p style="margin-top: 10px;"><strong>Workflow Summary:</strong></p>
-  <ol>
-    <li>Tune motor using ELMO studio for accurate position tracking of normative ankle angles.</li>
-    <li>Detect user intent via EMG signal thresholding; determine phase and disturbance onset.</li>
-    <li>Trigger torque boost to help navigate obstacles when abnormal muscle contraction is sensed.</li>
-    <li>Verify closed-loop control in experimental setup using physical obstacle interaction and bypass prosthetic fixture.</li>
   </ol>
 
   <div style="margin-top: 15px; text-align: center;">
