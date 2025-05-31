@@ -144,6 +144,25 @@
   </div>
 
   <!-- Project Card 3 -->
+  <div style="border: 1px solid #ddd; border-radius: 10px; padding: 20px; margin-bottom: 40px; background: #fafafa;">
+    <h3 style="color: #005a9c;">Sensor-to-EtherCAT Interface via Raspberry Pi</h3>
+    <p>Developed a custom data pipeline enabling IMU data transmission from a UART-based sensor to an EtherCAT-based control system using Raspberry Pi and a LAN9252 EtherCAT slave module.</p>
+    <p><strong>Workflow Summary:</strong></p>
+    <ol>
+      <li>Read real-time IMU data via UART using a Raspberry Pi.</li>
+      <li>Processed and buffered sensor data using custom Python scripts.</li>
+      <li>Transmitted formatted data to the LAN9252 EtherCAT slave over SPI protocol.</li>
+      <li>Successfully integrated with TwinCAT master for real-time robotic control applications.</li>
+      <li>Designed and tested the entire system using oscilloscope and TwinCAT diagnostics for signal integrity and timing validation.</li>
+    </ol>
+    <div style="margin-top: 15px; text-align: center;">
+      <img src="images/SPI2EtherCat.png" alt="Sensor-to-EtherCAT Flow Diagram" style="max-width: 90%; height: auto; border: 1px solid #ccc; padding: 5px;">
+      <p style="font-size: 14px;">Flowchart showing sensor integration from IMU to EtherCAT via Raspberry Pi</p>
+    </div>
+    <p><strong>Source Code:</strong> <a href="https://github.com/Amir7RN/RaspberryPi-EtherCAT-Slave" target="_blank">GitHub Repository</a></p>
+  </div>
+
+  <!-- Project Card 4 -->
   <div style="border: 1px solid #ddd; border-radius: 10px; padding: 20px; background: #fafafa;">
     <h3 style="color: #005a9c;">Robotic Ankle Prosthesis with Shared Autonomy</h3>
     <p>Developed a control framework for a powered ankle prosthesis using real-time motor control and sensor fusion to enable adaptive assistance during obstacle avoidance.</p>
