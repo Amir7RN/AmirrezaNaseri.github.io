@@ -137,6 +137,51 @@
   </div>
 
 
+     <!-- Project Card: 5 -->
+<div style="border: 1px solid #ddd; border-radius: 10px; padding: 20px; margin-bottom: 40px; background: #fafafa;">
+  <h3 style="color: #005a9c;">Adaptive AI-Driven Control with Fault-Tolerance for Robotic Actuation Systems</h3>
+  <p>Developed and validated a machine-learning-based controller for a robotic actuated knee prosthesis, augmented with an active safety mechanism (Fault-Tolerance Mechanism; FTM) to detect and compensate for internal control faults in real time—enhancing user safety, balance, and gait stability.</p>
+
+  <p><strong>Workflow included:</strong></p>
+  <ol>
+    <li>Real-time controller development using TwinCAT3–Simulink RT over EtherCAT</li>
+    <li>Upgraded control loop frequency from 100 Hz (LabView) to 1 kHz (TwinCAT) for responsive adaptation</li>
+    <li>Designed and integrated full embedded system architecture including KEB EtherCAT bus, NI DAQ interface, Raspberry Pi, and SPI-to-EtherCAT slave modules</li>
+    <li>Augmented the controller with higher-level physics-informed, machine-learning-driven FTM for mitigating intrinsic faults</li>
+    <li>Experimental validation with simulated faults during treadmill walking trials with human subjects (Motion Capture)</li>
+    <li>Quantitative and subjective evaluation of gait disturbances and stability (Biomechanics)</li>
+  </ol>
+
+  <div style="margin-top: 15px; text-align: center;">
+    <img src="images/Hardware.png" alt="Powered Knee Controller" style="max-width: 90%; height: auto; border: 1px solid #ccc; padding: 5px;">
+    <p style="font-size: 14px;">Overview of the real-time prosthetic control system: The Simulink model (top left) implements the adaptive control strategy. Sensor data from the prosthesis (right) — including IMU, load cell, and potentiometer — is acquired via Raspberry Pi and LAN9252 EtherCAT slave module, integrated with TwinCAT3 via NI DAQ and analog/digital IOs (bottom). The closed-loop controller drives the motor based on user interaction.</p>
+  </div>
+
+  <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+    <video src="videos/PoweredKnee.mp4" controls style="width: 60%;"></video>
+    <p style="font-size: 14px; margin-top: 8px; text-align: center; max-width: 80%;">
+      Real-time control of a powered knee prosthesis is demonstrated on an amputee subject, with a live Simulink interface showing the finite-state machine and sensor data streaming.
+    </p>
+  </div>
+
+  <div style="margin-top: 15px; text-align: center;">
+    <img src="images/FTC.png" alt="FTM Architecture" style="max-width: 90%; height: auto; border: 1px solid #ccc; padding: 5px;">
+    <p style="font-size: 14px;">Detection and recovery architecture of the FTM with machine learning-based joint dynamics estimation for applying required torque correction.</p>
+  </div>
+
+  <p><strong>Related Publications:</strong></p>
+  <ol>
+    <li><a href="https://ieeexplore.ieee.org/abstract/document/9807423" target="_blank">IEEE: Robotics and Automation Letters</a></li>
+    <li><a href="https://ieeexplore.ieee.org/abstract/document/10342433" target="_blank">IEEE: /RSJ International Conference on Intelligent Robots and Systems (IROS)</a></li>
+    <li><a href="https://ieeexplore.ieee.org/abstract/document/10302381" target="_blank">IEEE: Transactions on Neural Systems and Rehabilitation Engineering</a></li>
+    <li><a href="https://www.sciencedirect.com/science/article/pii/S1350453322001916" target="_blank">Medical Engineering & Physics</a></li>
+  </ol>
+</div>
+
+  <p><em>Note: Licensing and copyright for this system are currently pending with NC State OTL.</em></p>
+</div>
+
+
   <!-- Project Card 3 -->
   <div style="border: 1px solid #ddd; border-radius: 10px; padding: 20px; margin-bottom: 40px; background: #fafafa;">
     <h3 style="color: #005a9c;">Real-Time Adaptive Control of Actuated Robotic Systems Using Force Feedback</h3>
@@ -191,43 +236,7 @@
 </section>
 
       
-<!-- Project Card: 5 -->
-<div style="border: 1px solid #ddd; border-radius: 10px; padding: 20px; margin-bottom: 40px; background: #fafafa;">
-  <h3 style="color: #005a9c;">Robotic Knee Prosthesis with Fault-Tolerant AI Control</h3>
-  <p>Developed and validated a machine-learning-based active Fault-Tolerance Mechanism (FTM) for a robotic knee prosthesis to detect and compensate for internal control faults in real time, improving balance, gait stability, and user safety.</p>
-  
-  <p><strong>Workflow included:</strong></p>
-  <ol>
-    <li>Real-time controller development using TwinCAT3–Simulink RT over EtherCAT</li>
-    <li>Upgraded control loop frequency from 100 Hz to 1 kHz for responsive gait adaptation</li>
-    <li>Experimental validation with simulated faults in human subject treadmill walking</li>
-    <li>Quantitative and subjective evaluation of gait disturbances and stability</li>
-  <ol>
 
-  <div style="margin-top: 15px; text-align: center;">
-    <img src="images/Hardware.png" alt="Powered Knee Controller" style="max-width: 90%; height: auto; border: 1px solid #ccc; padding: 5px;">
-    <p style="font-size: 14px;">Figure: Overview of the real-time prosthetic control system: The Simulink model (top left) implements the adaptive control strategy. Sensor data from the prosthesis (right) — including IMU, load cell, and potentiometer — is acquired via a Raspberry Pi and LAN9252 EtherCAT slave module, integrated with TwinCAT3 via an NI DAQ and analog/digital IOs (bottom). The closed-loop controller runs in real time to drive the motor based on user interaction.</p>
-  </div>
-<div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
-  <video src="videos/PoweredKnee.mp4" controls style="width: 60%;"></video>
-  <p style="font-size: 14px; margin-top: 8px; text-align: center; max-width: 80%;">
-    Real-time control of a powered knee prosthesis is demonstrated on an amputee subject, with a live Simulink interface showing the finite-state machine and sensor data streaming.
-  </p>
-</div>
-    <div style="margin-top: 15px; text-align: center;">
-    <img src="images/FTC.png" alt="FTM Architecture" style="max-width: 90%; height: auto; border: 1px solid #ccc; padding: 5px;">
-    <p style="font-size: 14px;">Figure: Detection and recovery architecture of the FTM with joint dynamics estimation and phase-based torque correction</p>
-  </div>
-  <p><strong>Related Publications:</strong></p>
-  <ol>
-    <li><a href="https://ieeexplore.ieee.org/abstract/document/9807423" target="_blank">IEEE: Robotics and Automation Letters</a></li>
-    <li><a href="https://ieeexplore.ieee.org/abstract/document/10342433" target="_blank">IEEE: /RSJ International Conference on Intelligent Robots and Systems (IROS)</a></li>
-    <li><a href="https://ieeexplore.ieee.org/abstract/document/10302381" target="_blank">IEEE: Transactions on Neural Systems and Rehabilitation Engineering</a></li>
-    <li><a href="https://www.sciencedirect.com/science/article/pii/S1350453322001916" target="_blank">Medical Engineering & Physics</a></li>
-  <ol>
-
-  <p><em>Note: Licensing and copyright for this system are currently pending with NC State OTL.</em></p>
-</div>
 
 <!-- Project Card: Momentum-Based Control for Hip Exoskeleton -->
 <div style="border: 1px solid #ddd; border-radius: 10px; padding: 20px; margin-bottom: 40px; background: #fafafa;">
