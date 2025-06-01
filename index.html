@@ -179,7 +179,32 @@
   <p><em>Note: Licensing and copyright for this system are currently pending with NC State OTL.</em></p>
 </div>
 
+<!-- Project Card: 4 -->
+<div style="border: 1px solid #ddd; border-radius: 10px; padding: 20px; margin-bottom: 40px; background: #fafafa;">
+  <h3 style="color: #005a9c;">Adaptive Mode-Switching Control with Shared Autonomy for Robotic Actuation</h3>
+  <p>Designed and implemented a control architecture for a wearable robotic system (case study: robotic ankle prosthesis) featuring dual-mode operation, position control for autonomous trajectory tracking, and torque control based on volitional physiological signals (EMG) for adaptive user-driven behavior. The system enables seamless transitions to assist users during dynamic tasks like obstacle avoidance.</p>
 
+  <p><strong>Workflow Summary:</strong></p>
+  <ol>
+    <li>Programmed and tuned ELMO Gold Solo Twitter servo drives for BLDC motors operating in both position and torque control modes</li>
+    <li>Integrated real-time EMG and IMU sensor data using fast signal conditioning and threshold-based decision logic</li>
+    <li>Implemented hybrid control mode switching from trajectory tracking to torque augmentation based on user intent deviation</li>
+    <li>Calibrated load cells, potentiometers, and multi-turn encoders for accurate sensor feedback on a bypass-ready prosthesis tested with AB subjects</li>
+  </ol>
+
+  <div style="margin-top: 15px; text-align: center;">
+    <img src="images/Ankle.png" alt="EMG Prosthesis Setup" style="max-width: 80%; height: auto; border: 1px solid #ccc; padding: 5px;">
+    <p style="font-size: 14px;">System overview illustrating subject testing, simulation-based motion analysis, and the physical setup using bypass-enabled prosthetic hardware.</p>
+  </div>
+
+  <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+    <video src="videos/Experiment.mp4" controls style="width: 60%;"></video>
+    <p style="font-size: 14px; margin-top: 8px; text-align: center; max-width: 80%;">
+      Demonstration of shared autonomy: an able-bodied subject walks with a robotic ankle prosthesis in position control mode. Upon detecting an approaching obstacle, volitional muscle activation triggers torque control, enhancing foot clearance for successful obstacle negotiation.
+    </p>
+  </div>
+</div>
+      
   <!-- Project Card 3 -->
   <div style="border: 1px solid #ddd; border-radius: 10px; padding: 20px; margin-bottom: 40px; background: #fafafa;">
     <h3 style="color: #005a9c;">Real-Time Adaptive Control of Actuated Robotic Systems Using Force Feedback</h3>
@@ -207,31 +232,8 @@
   </div>
 
   
-  <!-- Project Card 4 -->
-  <div style="border: 1px solid #ddd; border-radius: 10px; padding: 20px; background: #fafafa;">
-    <h3 style="color: #005a9c;">Robotic Ankle Prosthesis with Shared Autonomy</h3>
-    <p>Developed a control framework for a powered ankle prosthesis using real-time motor control and sensor fusion to enable adaptive assistance during obstacle avoidance.</p>
-    <p><strong>Workflow Summary:</strong></p>
-    <ol>
-      <li>Programmed and tuned ELMO Gold Solo Twitter servo drives for BLDC motors in position and torque control modes.</li>
-      <li>Integrated EMG and IMU sensors with fast filtering and threshold logic to detect user intent deviations from normal walking.</li>
-      <li>Implemented control switching logic: transitions from position control to torque augmentation when obstacle engagement is detected.</li>
-      <li>Configured sensor calibration pipelines for load cells, potentiometers, and multi-turn encoders on a bypass-enabled prosthetic system for AB subject testing.</li>
-    </ol>
-    <div style="margin-top: 15px; text-align: center;">
-      <img src="images/Ankle.png" alt="EMG Prosthesis Setup" style="max-width: 80%; height: auto; border: 1px solid #ccc; padding: 5px;">
-      <p style="font-size: 14px;">Subplots show simulated EMG environment, real-time controller, and prosthetic hardware used for AB testing</p>
-    </div>
-<div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
-  <video src="videos/Experiment.mp4" controls style="width: 60%;"></video>
-  <p style="font-size: 14px; margin-top: 8px; text-align: center; max-width: 80%;">
-    Demonstration of shared autonomy in a robotic ankle prosthesis: the able-bodied subject walks with position tracking, and upon detecting an obstacle, muscle activation triggers torque control to enhance foot clearance during the swing phase.
-  </p>
-</div>
 
-  </div>
 
-</section>
 
       
 
@@ -263,10 +265,6 @@
   </div>
   <p style="text-align: center; font-size: 14px;">Narrow beam walking task assisted by hip exoskeleton applying abduction/adduction torque based on angular momentum control to support mediolateral balance.</p>
 
-  <p><strong>Related Publication:</strong></p>
-  <ul>
-    <li><a href="https://doi.org/10.48550/arXiv.2405.16188" target="_blank">Momentum-Based Hip Exoskeleton Control for Enhancing Mediolateral Stability During Challenging Locomotion</a></li>
-  </ul>
 </div>
 
   </section>
