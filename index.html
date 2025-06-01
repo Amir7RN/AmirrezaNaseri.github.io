@@ -185,12 +185,42 @@
 </section>
 
       
-</li>      
-      <li><strong>Robotic Knee Prosthesis with Fault-Tolerant Control</strong> — Developed a real-time controller to detect and mitigate internal errors during gait. <a href="#">[Video]</a><br>
-      <img src="images/FTC.png" alt="Fault-Tolerant Control" style="max-width:100%; height:auto; margin-top:10px;">
-      <br>
-      <a href="#">[PDF]</a>
-      </li>
+<!-- Project Card: 5 -->
+<div style="border: 1px solid #ddd; border-radius: 10px; padding: 20px; margin-bottom: 40px; background: #fafafa;">
+  <h3 style="color: #005a9c;">Robotic Knee Prosthesis with Fault-Tolerant AI Control</h3>
+  <p>Developed and validated a machine-learning-based active Fault-Tolerance Mechanism (FTM) for a robotic knee prosthesis to detect and compensate for internal control faults in real time, improving balance, gait stability, and user safety.</p>
+  
+  <p><strong>Workflow included:</strong></p>
+  <ul>
+    <li>Real-time controller development using TwinCAT3–Simulink RT over EtherCAT</li>
+    <li>Upgraded control loop frequency from 100 Hz to 1 kHz for responsive gait adaptation</li>
+    <li>Integrated IMU via UART–EtherCAT bridge using Raspberry Pi as EtherCAT slave</li>
+    <li>Experimental validation with simulated faults in human subject treadmill walking</li>
+    <li>Quantitative and subjective evaluation of gait disturbances and stability</li>
+  </ul>
+
+  <div style="margin-top: 15px; text-align: center;">
+    <img src="images/FTC.png" alt="FTM Architecture" style="max-width: 90%; height: auto; border: 1px solid #ccc; padding: 5px;">
+    <p style="font-size: 14px;">Figure: Detection and recovery architecture of the FTM with joint dynamics estimation and phase-based torque correction</p>
+  </div>
+
+  <p><strong>Supplementary Video:</strong></p>
+  <div style="display: flex; justify-content: center; margin-top: 20px;">
+    <video src="videos/FTM_Demo.mp4" controls style="width: 80%;"></video>
+  </div>
+
+  <p><strong>Source Code:</strong> <a href="https://github.com/Amir7RN/RaspberryPi-EtherCAT-Slave" target="_blank">GitHub Repository</a></p>
+
+  <p><strong>Related Publications:</strong></p>
+  <ul>
+    <li><a href="https://ieeexplore.ieee.org/abstract/document/9807423" target="_blank">IEEE: Gait-aware Intrinsic Fault Detection</a></li>
+    <li><a href="https://ieeexplore.ieee.org/abstract/document/10342433" target="_blank">IEEE: Hybrid Detection Architecture</a></li>
+    <li><a href="https://ieeexplore.ieee.org/abstract/document/10302381" target="_blank">IEEE: Sensor Fusion for Prosthetic Joint Fault Recovery</a></li>
+  </ul>
+
+  <p><em>Note: Licensing and copyright for this system are currently pending with NC State OTL. Patent submission in process.</em></p>
+</div>
+
       <li><strong>Hip Exoskeleton for Mediolateral Balance</strong> — Designed a hip exoskeleton with momentum-based control for narrow beam walking. <a href="#">[Poster]</a></li>
     </ul>
   </section>
