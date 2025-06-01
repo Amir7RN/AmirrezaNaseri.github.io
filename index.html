@@ -202,9 +202,12 @@
     <img src="images/Hardware.png" alt="Powered Knee Controller" style="max-width: 90%; height: auto; border: 1px solid #ccc; padding: 5px;">
     <p style="font-size: 14px;">Figure: Overview of the real-time prosthetic control system: The Simulink model (top left) implements the adaptive control strategy. Sensor data from the prosthesis (right) — including IMU, load cell, and potentiometer — is acquired via a Raspberry Pi and LAN9252 EtherCAT slave module, integrated with TwinCAT3 via an NI DAQ and analog/digital IOs (bottom). The closed-loop controller runs in real time to drive the motor based on user interaction.</p>
   </div>
-  <div style="display: flex; justify-content: center; margin-top: 20px;">
-      <video src="videos/PoweredKnee.mp4" controls style="width: 60%;"></video>
-    </div>
+<div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+  <video src="videos/PoweredKnee.mp4" controls style="width: 60%;"></video>
+  <p style="font-size: 14px; margin-top: 8px; text-align: center; max-width: 80%;">
+    Real-time control of a powered knee prosthesis is demonstrated on an amputee subject, with a live Simulink interface showing the finite-state machine and sensor data streaming.
+  </p>
+</div>
     <div style="margin-top: 15px; text-align: center;">
     <img src="images/FTC.png" alt="FTM Architecture" style="max-width: 90%; height: auto; border: 1px solid #ccc; padding: 5px;">
     <p style="font-size: 14px;">Figure: Detection and recovery architecture of the FTM with joint dynamics estimation and phase-based torque correction</p>
