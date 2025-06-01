@@ -227,8 +227,39 @@
   <p><em>Note: Licensing and copyright for this system are currently pending with NC State OTL.</em></p>
 </div>
 
-      <li><strong>Hip Exoskeleton for Mediolateral Balance</strong> — Designed a hip exoskeleton with momentum-based control for narrow beam walking. <a href="#">[Poster]</a></li>
-    </ul>
+<!-- Project Card: Momentum-Based Control for Hip Exoskeleton -->
+<div style="border: 1px solid #ddd; border-radius: 10px; padding: 20px; margin-bottom: 40px; background: #fafafa;">
+  <h3 style="color: #005a9c;">Momentum-Based Control for Hip Exoskeleton to Enhance Mediolateral Balance</h3>
+  <p>
+    Designed and implemented a real-time controller for a frontal-plane actuated hip exoskeleton that assists balance by regulating whole-body angular momentum. The exoskeleton applies adaptive ab/adduction torques based on excess torso momentum during beam walking, improving stability in highly constrained environments.
+  </p>
+
+  <p><strong>Workflow Summary:</strong></p>
+  <ol>
+    <li>Modeled the body as a three-link system and derived frontal-plane momentum equations from IMU signals.</li>
+    <li>Implemented a momentum-based controller in Simulink with real-time execution in TwinCAT at 1000 Hz.</li>
+    <li>Designed partial torque assistance strategy (20% stance leg, 5% swing leg) based on torso sway thresholds.</li>
+    <li>Built the hardware stack with EtherCAT modules, Raspberry Pi + Lan9252, load cells, and brushless motors.</li>
+    <li>Validated the system during narrow beam walking, a high-challenge stability task with able-bodied and amputee users.</li>
+  </ol>
+
+  <div style="margin-top: 15px; text-align: center;">
+    <img src="images/HipExoController.png" alt="Hip Exoskeleton Controller Overview" style="max-width: 80%; height: auto; border: 1px solid #ccc; padding: 5px;">
+    <p style="font-size: 14px;">System diagram showing the real-time control architecture, motor/controller layout, and physical hip exoskeleton used in the experiment.</p>
+  </div>
+
+  <p><strong>Beam Balance Walking Experiment:</strong></p>
+  <div style="display: flex; justify-content: center; margin-top: 20px;">
+    <video src="videos/ExoBeam.mp4" controls style="width: 70%;"></video>
+  </div>
+  <p style="text-align: center; font-size: 14px;">Narrow beam walking task assisted by hip exoskeleton applying abduction/adduction torque based on angular momentum control to support mediolateral balance.</p>
+
+  <p><strong>Related Publication:</strong></p>
+  <ul>
+    <li><a href="https://doi.org/10.48550/arXiv.2405.16188" target="_blank">Momentum-Based Hip Exoskeleton Control for Enhancing Mediolateral Stability During Challenging Locomotion</a></li>
+  </ul>
+</div>
+
   </section>
 
   </section>
