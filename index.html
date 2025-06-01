@@ -238,38 +238,32 @@
       
 
 
-<!-- Project Card: Momentum-Based Control for Hip Exoskeleton -->
+<!-- Project Card: 5 -->
 <div style="border: 1px solid #ddd; border-radius: 10px; padding: 20px; margin-bottom: 40px; background: #fafafa;">
-  <h3 style="color: #005a9c;">Momentum-Based Control for Hip Exoskeleton to Enhance Mediolateral Balance</h3>
-  <p>
-    Designed and implemented a real-time controller for a frontal-plane actuated hip exoskeleton that assists balance by regulating whole-body angular momentum. The exoskeleton applies adaptive ab/adduction torques based on excess torso momentum during beam walking, improving stability in highly constrained environments.
-  </p>
+  <h3 style="color: #005a9c;">Physics-Informed Control of Wearable Robotic Systems: Hip Exoskeleton Case Study</h3>
+  <p>Designed and implemented a real-time controller for a frontal-plane actuated robotic hip exoskeleton that assists balance by regulating whole-body angular momentum. The exoskeleton applies adaptive adduction torques based on excess torso momentum during narrow beam walking, improving stability in highly constrained environments.</p>
 
   <p><strong>Workflow Summary:</strong></p>
   <ol>
-    <li>Modeled the body as a three-link system and derived frontal-plane momentum equations from IMU signals.</li>
-    <li>Implemented a momentum-based controller in Simulink with real-time execution in TwinCAT at 1000 Hz.</li>
-    <li>Designed partial torque assistance strategy (20% stance leg, 5% swing leg) based on torso sway thresholds.</li>
-    <li>Built the hardware stack with EtherCAT modules, Raspberry Pi + Lan9252, load cells, and brushless motors.</li>
-    <li>Validated the system during narrow beam walking, a high-challenge stability task with able-bodied and amputee users.</li>
+    <li>Developed a physics-based assistance strategy using simplified whole-body human motion analysis (MATLAB)</li>
+    <li>Implemented a momentum-based controller with admittance control in Simulink and deployed it in real time using TwinCAT at 1 KHz (C++)</li>
+    <li>Developed the required embedded system architecture for fusion sensor integration and real-time control execution</li>
+    <li>Conducted validation through narrow beam walking experiments with able-bodied participants to assess balance augmentation</li>
   </ol>
 
   <div style="margin-top: 15px; text-align: center;">
     <img src="images/HipExoController.png" alt="Hip Exoskeleton Controller Overview" style="max-width: 80%; height: auto; border: 1px solid #ccc; padding: 5px;">
-    <p style="font-size: 14px;">System diagram showing the real-time control architecture, motor/controller layout, and physical hip exoskeleton used in the experiment.</p>
+    <p style="font-size: 14px;">System diagram illustrating the real-time control architecture, hardware-in-the-loop integration, and experimental hip exoskeleton used for mediolateral balance support.</p>
   </div>
 
   <p><strong>Beam Balance Walking Experiment:</strong></p>
   <div style="display: flex; justify-content: center; margin-top: 20px;">
     <video src="videos/ExoBeam.mp4" controls style="width: 70%;"></video>
   </div>
-  <p style="text-align: center; font-size: 14px;">Narrow beam walking task assisted by hip exoskeleton applying abduction/adduction torque based on angular momentum control to support mediolateral balance.</p>
-
+  <p style="text-align: center; font-size: 14px;">Narrow beam walking task assisted by hip exoskeleton applying adduction torque based on whole-body angular momentum minimization control to support mediolateral balance.</p>
 </div>
 
-  </section>
 
-  </section>
 
   <section>
     <h2>Resume</h2>
