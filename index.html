@@ -140,33 +140,33 @@
      <!-- Project Card: 5 -->
 <div style="border: 1px solid #ddd; border-radius: 10px; padding: 20px; margin-bottom: 40px; background: #fafafa;">
   <h3 style="color: #005a9c;">Adaptive AI-Driven Control with Fault-Tolerance for Robotic Actuation Systems</h3>
-  <p>Developed and validated a machine-learning-based controller for a robotic actuated knee prosthesis, augmented with an active safety mechanism (Fault-Tolerance Mechanism; FTM) to detect and compensate for internal control faults in real time—enhancing user safety, balance, and gait stability.</p>
+  <p>Developed and validated a machine-learning-based controller for a robotic actuated knee prosthesis, augmented with an active safety mechanism (Fault-Tolerance Mechanism; FTM) to detect and compensate for internal control faults in real time, enhancing user safety, balance, and gait stability.</p>
 
   <p><strong>Workflow included:</strong></p>
   <ol>
-    <li>Real-time controller development using TwinCAT3–Simulink RT over EtherCAT</li>
-    <li>Upgraded control loop frequency from 100 Hz (LabView) to 1 kHz (TwinCAT) for responsive adaptation</li>
-    <li>Designed and integrated full embedded system architecture including KEB EtherCAT bus, NI DAQ interface, Raspberry Pi, and SPI-to-EtherCAT slave modules</li>
-    <li>Augmented the controller with higher-level physics-informed, machine-learning-driven FTM for mitigating intrinsic faults</li>
-    <li>Experimental validation with simulated faults during treadmill walking trials with human subjects (Motion Capture)</li>
-    <li>Quantitative and subjective evaluation of gait disturbances and stability (Biomechanics)</li>
+    <li>Real-time controller development using TwinCAT3–Simulink RT over EtherCAT.</li>
+    <li>Upgraded control loop frequency from 100 Hz (LabView) to 1 kHz (TwinCAT) for responsive adaptation.</li>
+    <li>Designed and integrated full embedded system architecture including KEB EtherCAT bus, NI DAQ interface, Raspberry Pi, and SPI-to-EtherCAT slave modules.</li>
+    <li>Augmented the controller with higher-level physics-informed, machine-learning-driven FTM for mitigating intrinsic faults.</li>
+    <li>Experimental validation with simulated faults during treadmill walking trials with human subjects (Motion Capture).</li>
+    <li>Quantitative and subjective evaluation of gait disturbances and stability (Biomechanics).</li>
   </ol>
 
   <div style="margin-top: 15px; text-align: center;">
     <img src="images/Hardware.png" alt="Powered Knee Controller" style="max-width: 90%; height: auto; border: 1px solid #ccc; padding: 5px;">
-    <p style="font-size: 14px;">Overview of the real-time prosthetic control system: The Simulink model (top left) implements the adaptive control strategy. Sensor data from the prosthesis (right) — including IMU, load cell, and potentiometer — is acquired via Raspberry Pi and LAN9252 EtherCAT slave module, integrated with TwinCAT3 via NI DAQ and analog/digital IOs (bottom). The closed-loop controller drives the motor based on user interaction.</p>
+    <p style="font-size: 14px;">Overview of the real-time prosthetic control system: The Simulink model (top left) implements the adaptive control strategy augmented with the developed safety mechanism (FTM). Sensor data from the prosthesis (right), including IMU, load cell, and potentiometer, is acquired via EtherCat analog/digital IOs slave modules integrated with TwinCAT3(bottom). The closed-loop controller drives the motor based on user interaction.</p>
   </div>
 
   <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
     <video src="videos/PoweredKnee.mp4" controls style="width: 60%;"></video>
     <p style="font-size: 14px; margin-top: 8px; text-align: center; max-width: 80%;">
-      Real-time control of a powered knee prosthesis is demonstrated on an amputee subject, with a live Simulink interface showing the finite-state machine and sensor data streaming.
+      Real-time control of a robotic knee prosthesis is demonstrated on an amputee subject, with a live Simulink interface showing the finite-state machine and sensor data streaming.
     </p>
   </div>
 
   <div style="margin-top: 15px; text-align: center;">
     <img src="images/FTC.png" alt="FTM Architecture" style="max-width: 90%; height: auto; border: 1px solid #ccc; padding: 5px;">
-    <p style="font-size: 14px;">Detection and recovery architecture of the FTM with machine learning-based joint dynamics estimation for applying required torque correction.</p>
+    <p style="font-size: 14px;">Detection and recovery architecture of the FTM, featuring machine learning-based joint dynamics estimation for adaptive torque correction.</p>
   </div>
 
   <p><strong>Related Publications:</strong></p>
