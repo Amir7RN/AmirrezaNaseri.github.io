@@ -183,13 +183,13 @@
 <!-- Project Card: ROS TurtleBot3 Wall-Following with Services -->
 <div style="border: 1px solid #ddd; border-radius: 10px; padding: 20px; margin-bottom: 40px; background: #fafafa;">
   <h3 style="color: #005a9c;">ROS-Based Autonomous Wall-Following Robot using Topics and Services</h3>
-  <p>This project implements a real-time wall-following behavior on a TurtleBot3 robot using ROS 1 concepts of topics, services, and custom launch files. The robot autonomously locates a nearby wall and then follows it using laser scan feedback, adapting its trajectory based on distance thresholds and obstacle proximity. Developed as part of the "ROS Basics in 5 Days" course by <a href="https://www.theconstruct.ai" target="_blank">The Construct AI</a>.</p>
+  <p>This project implements a real-time wall-following behavior on a TurtleBot3 robot using ROS concepts of topics, services, and custom launch files. The robot autonomously locates a nearby wall and then follows it using laser scan feedback, adapting its trajectory based on distance thresholds and obstacle proximity. Developed as part of the "ROS Basics" course by <a href="https://www.theconstruct.ai" target="_blank">The Construct AI</a>.</p>
 
   <p><strong>Key ROS Concepts Practiced:</strong></p>
   <ul class="bulleted-list">
-    <li>Developed a ROS node that subscribes to `/scan` laser topic to continuously read LIDAR data.</li>
-    <li>Published control commands to `/cmd_vel` to move the robot in real time based on obstacle distance.</li>
-    <li>Created a custom service server `/find_wall` that rotates and approaches the nearest wall automatically.</li>
+    <li>Developed a ROS node that subscribes to the laser topic to continuously read LIDAR data.</li>
+    <li>Published control commands to move the robot in real time based on obstacle distance.</li>
+    <li>Created a custom service server that rotates and approaches the nearest wall automatically.</li>
     <li>Integrated a service client into the wall-following node to start behavior after wall alignment.</li>
     <li>Composed a unified launch file to start both the wall-finder and wall-follower nodes in sequence.</li>
   </ul>
@@ -200,7 +200,7 @@
   </div>
   <p style="text-align: center; font-size: 14px;">Live demonstration of autonomous wall alignment and following behavior using ROS on TurtleBot3.</p>
 
-  <p><strong>Acknowledgment:</strong> Project developed as part of the <a href="https://app.theconstruct.ai/courses/55" target="_blank">ROS Basics in 5 Days</a> course by The Construct AI.</p>
+  <p><strong>Acknowledgment:</strong> Project developed as part of the <a href="https://app.theconstruct.ai/courses/55" target="_blank">ROS Basics</a> course by The Construct AI.</p>
 </div>
 
 <!-- Project Card: 4 -->
